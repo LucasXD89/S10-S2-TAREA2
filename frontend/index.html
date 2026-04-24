@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Inventario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📦 Sistema de Productos en Stock</h1>
+    <p class="subtitle">Detalle de los productos en stock</p>
+
+    <!-- FORMULARIO -->
+    <div class="card">
+        <h2> Nuevo Producto</h2>
+
+        <div class="form">
+            <input id="nombre" placeholder="Ej: Laptop Lenovo">
+            <input id="precio" placeholder="Ej: 2500">
+            <input id="stock" placeholder="Ej: 10">
+            <button class="btn-green"> Guardar Producto</button>
+        </div>
+    </div>
+
+    <!-- TABLA -->
+    <div class="card">
+        <h2>---- Lista de Productos ----</h2>
+
+        <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio (S/.)</th>
+                <th>Stock</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody id="lista">
+            <tr>
+                <td colspan="5" style="text-align:center;">
+                    No hay productos registrados
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+</div>
+<br><br><br><br><br>
+<footer>
+    © 2026 Sistema de Inventario - CRUD con Node.js, Express y SQLite
+</footer>
+
+</body>
+</html>
